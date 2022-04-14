@@ -147,7 +147,7 @@ def signAttendance(otpCode, username, password):
     signResponseJson = signResponse.json()
 
     if signResponseJson['data'] is not None:
-        log('Attendance successfully taken for \'' + signResponseJson['data']['updateAttendance']['classcode'] + '\'\n')
+        log('Attendance successfully taken for `' + signResponseJson['data']['updateAttendance']['classcode'] + '`\n')
     else:
         log(signResponse.json()['errors'][0]['message'] + '\n')
 
