@@ -53,3 +53,4 @@ By using the discord webhook, the program will send you a message when a attenda
  - Telegram Integration :hourglass:
  - Instagram Integration :running_man:
  - Discord Integration :heavy_check_mark:
+ - Credentials Verification on Start :hourglass:
