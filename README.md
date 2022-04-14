@@ -1,5 +1,5 @@
 # autoAttendix2
-The autoAttendix2 is a better version of [autoAttendix](https://github.com/bryanc12/autoAttendix). Which use the api instead of the web interface, which boost the performance significantly by skipping the process of waiting the web interface to load which takes a long time.
+The autoAttendix2 is a better version of [autoAttendix](https://github.com/bryanc12/autoAttendix). It use the api instead of the web interface, which boost the performance significantly by skipping the process of waiting the web interface to load which takes a long time.
 
 You may use the included QR Code image files for testing and checking if everything is working as expected or correctly.
 
