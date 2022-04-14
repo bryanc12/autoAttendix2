@@ -49,9 +49,9 @@ By using the discord webhook, the program will send you a message when a attenda
 15. Done
 
 ## To do:
+ - Capture Specific Window :hourglass:
  - Credentials Verification on Start :hourglass:
  - Discord Integration :heavy_check_mark:
  - Instagram Integration :running_man:
  - Multi User :hourglass:
- - Capture Specific Window :hourglass:
  - Telegram Integration :hourglass:
