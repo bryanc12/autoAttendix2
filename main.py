@@ -36,7 +36,6 @@ def main():
             if (lastSignGap > 300.0):
                 break
             else:
-                pass
                 time.sleep(5)
 
         log('OTP Code Found -> ' + otpCode)
