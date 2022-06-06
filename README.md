@@ -7,7 +7,7 @@ You may use the included QR Code image files for testing and checking if everyth
 1. Python 3.10
 2. Internet :smiley:
    
-## How to use
+## How to use (Please run start.bat as Administrator for the first time to install the requirements properly!)
 1. Add your ApSpace login credentials and mode to settings.json file. <br> For Example:
 ```json
 {
