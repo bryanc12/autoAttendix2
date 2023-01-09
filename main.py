@@ -76,6 +76,8 @@ def getOtpCode(powerSaving):
             print('Screen capture permission denied by Operating System, error handled and solved.\n')
         # Turn pixels data into array form
         imgNp = np.array(img)
+        # Invert image (black to white, white to black)
+        imgNp = cv2.bitwise_not(imgNp)
         # Turn pixels array from color to greyscale
         frame = cv2.cvtColor(imgNp, cv2.COLOR_BGR2GRAY)
         # Scan picture for capturing QR code
