@@ -76,10 +76,12 @@ def getOtpCode(powerSaving):
             print('Screen capture permission denied by Operating System, error handled and solved.\n')
         # Turn pixels data into array form
         imgNp = np.array(img)
+        # Convert pixels array into UMat form
+        imgUMat = cv2.UMat(imgNp)
         # Invert image (black to white, white to black)
-        imgNp = cv2.bitwise_not(imgNp)
+        imgUMatRevert = cv2.bitwise_not(imgUMat)
         # Turn pixels array from color to greyscale
-        frame = cv2.cvtColor(imgNp, cv2.COLOR_BGR2GRAY)
+        frame = cv2.cvtColor(imgUMatRevert, cv2.COLOR_BGR2GRAY)
         # Scan picture for capturing QR code
         decodedData = pyzbar.decode(frame, symbols=[ZBarSymbol.QRCODE])
         sorted(ZBarSymbol.__members__.keys())
