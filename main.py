@@ -81,9 +81,11 @@ def getOtpCode(powerSaving):
         # Invert image (black to white, white to black)
         imgUMatRevert = cv2.bitwise_not(imgUMat)
         # Turn pixels array from color to greyscale
-        frame = cv2.cvtColor(imgUMatRevert, cv2.COLOR_BGR2GRAY)
+        frameUMat = cv2.cvtColor(imgUMatRevert, cv2.COLOR_BGR2GRAY)
+        # Convert UMat to Mat
+        frameMat = cv2.UMat.get(frameUMat)
         # Scan picture for capturing QR code
-        decodedData = pyzbar.decode(frame, symbols=[ZBarSymbol.QRCODE])
+        decodedData = pyzbar.decode(frameMat, symbols=[ZBarSymbol.QRCODE])
         sorted(ZBarSymbol.__members__.keys())
         # Convert scanned object object into string, and check it is a valid QR code in 3 digit form
         for obj in decodedData:
