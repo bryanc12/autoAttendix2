@@ -133,7 +133,7 @@ def signAttendance(otpCode, username, password):
         'content-type':'application/json',
         'ticket':ticket,
         'x-amz-user-agent':'aws-amplify/2.0.7',
-        'x-api-key':'da2-dv5bqitepbd2pmbmwt7keykfg4'
+        'x-api-key':'da2-u4ksf3gspnhyjcokxzugo3mqr4'
     }
 
     signVariables = {
