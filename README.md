@@ -1,3 +1,4 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/bryanc12/autoAttendix2)
 # autoAttendix2
 The autoAttendix2 is a better version of [autoAttendix](https://github.com/bryanc12/autoAttendix). It use the api instead of the web interface, which boost the performance significantly by skipping the process of waiting the web interface to load which takes a long time.
 
